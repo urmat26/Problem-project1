@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Запись к врачу</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Запись к врачу</h2>
+
+    <form action="{% url 'success' %}">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="date" required>
+        <select>
+            <option>Терапевт</option>
+            <option>Кардиолог</option>
+            <option>Невролог</option>
+            <option>Хирург</option>
+            <option>Стоматолог</option>
+            <option>Педиатр</option>
+            <option>Аллерголог</option>
+        </select>
+
+        <button type="submit">Записаться</button>
+    </form>
+</div>
+
+</body>
+</html>

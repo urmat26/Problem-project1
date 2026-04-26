@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>QueueLess — Без очередей в больницах</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1 class="logo">QueueLess</h1>
+        <nav>
+            <a href="#about">О сервисе</a>
+            <a href="#how">Как работает</a>
+            <a href="{% url 'register' %}" class="nav-btn">Записаться</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Больше никаких очередей в больницах</h2>
+        <p>Записывайтесь к врачу онлайн и приходите точно ко времени</p>
+
+        <div class="hero-buttons">
+            <a href="{% url 'register' %}" class="btn">Записаться</a>
+            <a href="#how" class="btn secondary">Как это работает</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="features">
+    <div class="container">
+        <h2>О сервисе</h2>
+        <p class="section-text">
+            QueueLess — это сервис, который помогает пациентам записываться к врачу без очередей.
+            Клиники управляют потоком пациентов, а люди приходят точно ко времени.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>⏱ Экономия времени</h3>
+                <p>Никаких длинных очередей</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Онлайн-запись</h3>
+                <p>Быстро и удобно с телефона</p>
+            </div>
+
+            <div class="card">
+                <h3>🔔 Напоминания</h3>
+                <p>Вы не забудете о приёме</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="how" class="steps">
+    <div class="container">
+        <h2>Как это работает</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>1️⃣ Выберите врача</h3>
+                <p>Найдите нужного специалиста</p>
+            </div>
+
+            <div class="card">
+                <h3>2️⃣ Выберите время</h3>
+                <p>Удобный слот без очереди</p>
+            </div>
+
+            <div class="card">
+                <h3>3️⃣ Приходите</h3>
+                <p>В своё время — без ожидания</p>
+            </div>
+        </div>
+
+        <a href="{% url 'register' %}" class="btn big">Записаться сейчас</a>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Начните уже сегодня</h2>
+        <p>Подключите клинику или запишитесь как пациент</p>
+        <a href="{% url 'register' %}" class="btn">Попробовать</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 QueueLess</p>
+    </div>
+</footer>
+
+</body>
+</html>
