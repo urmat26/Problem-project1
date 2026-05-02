@@ -18,5 +18,6 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    
